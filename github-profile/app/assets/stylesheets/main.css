@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 10px;
+  padding-left: 50px;
+  width: 90%;
+}
+
+.nav {
+  background-color: #24292F;
+  width: 100%;
+  padding: 15px;
+  margin-top: 0;
+}
+
+input, a {
+  margin-left: 150px;
+}
+
+.nav_input {
+  background-color: #3F4449;
+  color: #8C8F92;
+  border: none;
+  height: 40px;
+  font-size: 1rem;
+  text-indent: 5px;
+}
+
+input {
+  width: 20%;
+}
+
+a {
+  color: #C8C9CB;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+a:hover {
+  color: white;
+}
+
+.overview_nav {
+  float: right
+}
+
+.overview_item {
+  list-style: none;
+  display: inline;
+  margin: 5px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.search {
+  float: right;
+}
+
+.bio_container {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  margin-top: -70px;
+}
+
+.bio_login, .bio_description, .repo_description, .repo_language, .repo_updated {
+  color: #746666;
+}
+
+.bio_img {
+  border-radius: 5%;
+}
+
+.bio_description {
+  line-height: 25px;
+}
+
+.bio_edit {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.repo {
+  width: 60%;
+  float: left;
+}
+
+.repo_name {
+  color: #0059DE;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.repo_language, .repo_updated {
+  display: inline;
+}
+
+.repo_updated {
+  margin-left: 10px;
+}
+
+.clearfix {
+  clear: both;
+  float: right;
+  width: 65%;
+}
+
+.one {
+  margin-bottom: 5px;
+}
+
+.two {
+  margin-top: 5px;
+}
+
+.search_form input {
+  width: 30%;
+}
+
+.search {
+  width: 60%;
+  padding: 10px;
+}
+
+.search_new {
+  background-color: #00B03B;
+  color: white;
+}
+
+.style-image {
+  max-width: 100%;
+}

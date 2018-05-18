@@ -1,0 +1,69 @@
+<nav class="nav">
+  <input class="nav_input" type="text" placeholder="Search GitHub">
+  <a href="#">Pull requests</a>
+  <a href="#">Issues</a>
+  <a href="#">Marketplace</a>
+  <a href="#">Explore</a>
+</nav>
+<div class="wrapper">
+  <div class="clearfix">
+  </div>
+  <ul class="overview_nav">
+    <li class="overview_item">Overview</li>
+    <li class="overview_item highlight">Repositories <%= @person["public_repos"] %></li>
+    <li class="overview_item">Stars <%= @person["public_gists"] %></li>
+    <li class="overview_item">Followers <%= @person["followers"] %></li>
+    <li class="overview_item">Following <%= @person["following"] %></li>
+  </ul>
+  <div class="clearfix one">
+  <hr>
+  </div>
+  <div class="search">
+    <form class="search_form">
+      <input type="text" placeholder="Search repositories...">
+      <select class="search_type" name="type" form="typeform">
+        <option value="all">Type: All</option>
+      </select>
+      <select name="search_languages" form="typeform">
+        <option value="all">Language: All</option>
+      </select>
+      <button class="search_new">New</button
+    </form>
+  </div>
+  <div class="clearfix two">
+  <hr>
+  </div>
+  <div class="bio_container">
+    <%= image_tag("#{@person["avatar_url"]}", size: "300", :class => "bio_img") %>
+    <h2 class="bio_name">
+      <%= @person["name"] %>
+    </h2>
+    <h3 class="bio_login">
+      <%= @person["login"] %>
+    </h3>
+    <p class="bio_description">
+      <%= @person["bio"] %>
+    </p>
+    <button class="bio_edit">Edit Bio</button>
+    <p class="bio_company">
+      <%= @person["company"] %>
+    </p>
+    <p class="bio_location">
+      <%= @person["location"] %>
+    </p>
+  </div>
+  <div class="repo">
+    <% @repos.each do |repo| %>
+      <h3 class="repo_name"><%=repo["name"] %></h3>
+      <p class="repo_description"><%=repo["description"] %></p>
+      <p class="repo_language"><%=repo["language"] %></p>
+      <p class="repo_updated">Updated on: <%=repo["updated_at"] %></p>
+      <hr>
+    <% end %>
+  </div>
+  <div class="clearfix three">
+  </div>
+</div>
+
+
+
